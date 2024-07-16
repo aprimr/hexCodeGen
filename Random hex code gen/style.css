@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    color: #00b7ff;
+    margin: 30px 20px 10px 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.content .box {
+    margin: 30px 20px 20px 20px;
+    box-shadow: 2px 2px 5px silver;
+    height: 200px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.content .box .color-area {
+    /* background-color: #00b7ff; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 150px;
+    height: 160px;
+}
+
+.content .box .text-area {
+    display: flex;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .box #copy:hover{
+    color: #00b7ff;
+}
+
+.content .box .text-area .text {
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.content .box .text-area #copy{
+    margin-left:4px ;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.reset-btn{
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.reset-btn button{
+    height: 50px;
+    width: 200px;
+    background-color: #00b7ff;
+    border: none;
+    border-radius: 4px ;
+    font-size: larger;
+    color: white;
+    cursor: pointer;
+    transition: ease 0.1s;
+}
+
+.reset-btn button:hover{
+    box-shadow: 2px 2px 5px silver;
+}
+
+.footer{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#00b7ff ;
+    height: 30px;
+    width: 100%;
+    bottom: 0;
+}
+.footer p{
+    color: white;
+}
+.title , .footer , .reset-btn , #copy {
+    user-select: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none; 
+}
